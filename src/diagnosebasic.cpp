@@ -89,6 +89,11 @@ QString DiagnoseBasic::name() const
   return "Basic diagnosis plugin";
 }
 
+QString DiagnoseBasic::localizedName() const
+{
+  return tr("Basic diagnosis plugin");
+}
+
 QString DiagnoseBasic::author() const
 {
   return "Tannin";
@@ -102,11 +107,6 @@ QString DiagnoseBasic::description() const
 VersionInfo DiagnoseBasic::version() const
 {
   return VersionInfo(1, 1, 3, VersionInfo::RELEASE_FINAL);
-}
-
-bool DiagnoseBasic::isActive() const
-{
-  return true;
 }
 
 QList<PluginSetting> DiagnoseBasic::settings() const
